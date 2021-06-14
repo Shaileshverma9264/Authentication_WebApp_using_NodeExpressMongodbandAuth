@@ -1,0 +1,70 @@
+{{!-- <form class="form-inline mr-auto" target="_self">
+
+</form><span class="navbar-text"><a data-target="#myModals" href="/contact" class="login">Register
+    </a></span> --}}
+
+
+<button type="submit" class="btn btn-light action-button " data-toggle="modal" data-target="#myModals">Register
+</button>
+<div class="modal fade" id="myModals">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header text-center">
+                <h4 class="modal-title ">Register</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="/contact" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" placeholder="Enter name" id="name" autocomplete="off"
+                            name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email address:</label>
+                        <input type="email" class="form-control" placeholder="Enter email" id="email" autocomplete="off"
+                            name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile:</label>
+                        <input type="number" class="form-control" placeholder="Enter mobile" id="mobile"
+                            autocomplete="off" name="number">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea type="message" class="form-control" placeholder="Write message...." id="message"
+                            autocomplete="off" name="message"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" placeholder="Enter password" id="pwd"
+                            autocomplete="off" name="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">ConfirmPassword:</label>
+                        <input type="password" class="form-control" placeholder="Enter password" id="pwd"
+                            autocomplete="off" name="CPassword">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <p>do you have an account? <a data-toggle="modal" data-target="#myModal" href="#">login</a></p>
+
+                </form>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="submit" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+
+        </div>
+    </div>
+</div>
